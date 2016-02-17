@@ -201,7 +201,7 @@
     font-family: "Open Sans", sans-serif;
 }
 #servicios {
-    padding: 2% 5%;
+    padding: 2% 0;
 }
 .subrayado {
     width: 40px;
@@ -209,8 +209,13 @@
     margin: auto;
     border: 1px solid #F05F40;
 }
+.marco-servicio {
+    width: 90%;
+    margin: auto;
+}
 .servicio {
     margin-top: 30px;
+    text-align: center;
 }
 #servicios i {
      font-size: 35px;   
@@ -224,9 +229,50 @@
 #servicios p {
     font-size: 12px;
 }
+@media only screen and (min-width : 320px) {
+        .marco-servicio {
+        width: 80%;
+    }
+}
+@media only screen and (min-width : 480px) {
+    .marco-servicio {
+        width: 80%;
+    }
+}
+@media only screen and (min-width : 768px) {
+    .marco-servicio {
+        width: 70%;
+    }
+}
+/*--------------Mis Trabajo--------------------*/
+.proyecto {
+    display: inline-block;
+    
+}
+@media only screen and (min-width : 320px) {
+        
+}
+@media only screen and (min-width : 480px) {
+
+}
+
+@media only screen and (min-width : 768px) {
+
+}
 
 /*----------------------------------*/
-/*----------------------------------*/
+
+@media only screen and (min-width : 320px) {
+        
+}
+@media only screen and (min-width : 480px) {
+
+}
+
+@media only screen and (min-width : 768px) {
+
+}
+
 /*----------------------------------*/
 
 

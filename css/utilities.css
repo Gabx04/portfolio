@@ -1,5 +1,5 @@
 /* Font weight */
-strong { 
+.strong { 
 	font-weight: 600; 
 }
 .f-600 {
@@ -170,7 +170,9 @@ strong {
 	color: #777;
 }
 
-
+.pd-3 {
+	padding: 3%;
+}
 
 
 

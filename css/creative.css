@@ -230,9 +230,7 @@
     font-size: 12px;
 }
 @media only screen and (min-width : 320px) {
-        .marco-servicio {
-        width: 80%;
-    }
+        
 }
 @media only screen and (min-width : 480px) {
     .marco-servicio {
@@ -246,9 +244,38 @@
 }
 /*--------------Mis Trabajo--------------------*/
 .proyecto {
-    display: inline-block;
+    position: relative;
+   
+}
+.transparencia:pointer {
+    background: rgba(240, 95, 64, 0.6);
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
     
 }
+.proyecto img {
+    /*display: inline-block;*/
+    width: 100%;
+    height: 100%;
+}
+.proyecto img {
+    
+}
+#mistrabajos p {
+    font-size: 18px;
+}
+.botonblanco {
+    border: none;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+/*.uno {
+    background-image: url(../img/portfolio/1.jpg);
+}*/
 @media only screen and (min-width : 320px) {
         
 }
@@ -260,8 +287,23 @@
 
 }
 
-/*----------------------------------*/
-
+/*---------------Contáctame-------------------*/
+#contactame h2 {
+    font-size: 25px;
+}
+#contactame p:first-child {
+    font-size: 12px;
+    width: 40%;
+    margin:  2% auto;
+}
+#contactame i {
+    font-size: 30px;
+    color: #333333;
+}
+#contactame a:hover {
+    text-decoration: none;
+    color: #F05F40;
+}
 @media only screen and (min-width : 320px) {
         
 }

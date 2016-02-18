@@ -245,37 +245,41 @@
 /*--------------Mis Trabajo--------------------*/
 .proyecto {
     position: relative;
-   
-}
-.transparencia:pointer {
-    background: rgba(240, 95, 64, 0.6);
-    position: relative;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 5;
-    
-}
+    float: left;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+ }
 .proyecto img {
-    /*display: inline-block;*/
     width: 100%;
     height: 100%;
 }
-.proyecto img {
-    
+.transparencia {
+    display: none;
+    position: absolute;
+    background: rgba(240, 95, 64, 0.6);
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 20%;
+}
+.proyecto:hover .transparencia {
+    display: block;
 }
 #mistrabajos p {
     font-size: 18px;
 }
-.botonblanco {
-    border: none;
-    border-radius: 30px;
-    padding: 5px 10px;
+.categoria {
+    color: #FED6CD;
+    font-weight: 600;
+    font-size: 14px !important;
+    margin-bottom: 0;
 }
-/*.uno {
-    background-image: url(../img/portfolio/1.jpg);
-}*/
+
+
 @media only screen and (min-width : 320px) {
         
 }

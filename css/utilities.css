@@ -173,7 +173,13 @@
 .pd-3 {
 	padding: 3%;
 }
+.boton {
+    border: none;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
 
-
-
+.mg-auto {
+	margin: auto;
+}
 

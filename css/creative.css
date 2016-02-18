@@ -23,9 +23,21 @@ header .fixed{
   	border-bottom:1px solid rgba(255,255,255, 0.3) ;
   	background:rgba(255,255,255, 0.3);
 }
-.logos{
+.logos {
 	text-decoration:none;
-}
+	color: rgba(255,255,255, 0.6);
+    padding: 6px 11px 4px 3px;
+    font-size: 13px;
+    font-weight:bold;
+}    
+.logos:hover{
+	text-decoration:none;
+	color:white;
+    font-size: 14px;
+    font-weight:bold;
+}    
+	
+
 .navbar-default .navbar-toggle{
 	border-color: transparent;
 	margin-left: 20px;
@@ -50,9 +62,9 @@ header .fixed{
 
 .navbar-default .navbar-nav > li > a {
     color: rgba(255,255,255, 0.6);
+    padding: 6px 11px 4px 3px;
+    font-size: 10px;
     font-weight:bold;
-    padding:2px;
-    padding: 4px 11px 4px 10px;
 }
 .navbar-default .navbar-nav > li > a:hover{
 	background-color: transparent;
@@ -83,15 +95,24 @@ button.navbar-toggle{
 }
 
 .line{
-	border-bottom: 3px solid #F05F40;
+	
 	width: 6%;
 	margin:auto;
 	margin-bottom:3%;
 }
 
+.orange{
+	border-bottom: 3px solid #F05F40;
+}
 
+.white {
+	border-bottom: 3px solid white;
+}	
 
-
+/*-------------sobremi------------------*/
+#sobremi{
+	color:white;
+}
 
 
 

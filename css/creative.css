@@ -23,7 +23,7 @@ header .fixed{
 	background: transparent;
 	width: 100%;
   	left:0;
-  	z-index:5;
+  	z-index:10;
   	border-bottom:1px solid rgba(255,255,255, 0.3) ;
   	background:rgba(255,255,255, 0.3);
 }
@@ -34,18 +34,24 @@ header .fixed{
   }
 }
 
+.port a:hover{
+   margin-top:5px; 
+   text-decoration:none;
+}
+
+@media (max-width: 600px) {
+  .port {
+     margin-top:10px;
+     text-decoration:none;
+  }
+}
+
 .logos {
 	text-decoration:none;
-	color: rgba(255,255,255, 0.6);
+	color: rgba(255,255,255, 0.3);
     padding: 6px 11px 4px 3px;
     font-size: 13px;
     font-weight:bold;
-}
-@media (max-width: 600px) {
-  .logos {
-     color: #F05F40;
-     font-weight:bold;
-  }
 }
 
 
@@ -54,7 +60,41 @@ header .fixed{
 	color:white;
     font-size: 14px;
     font-weight:bold;
-}    
+}  
+
+.logos:focus{
+    text-decoration:none;
+    color: white;
+}
+
+@media (max-width: 600px) {
+  .logos {
+     color: #F05F40;
+     font-weight:bold;
+     text-decoration:none;
+  }
+}
+
+@media (max-width: 600px) {
+  .logos:hover {
+     text-decoration:none;
+     color:gray;
+  }
+}
+
+@media (max-width: 600px) {
+  .logos:focus {
+     text-decoration:none;
+     color:#F05F40;
+  }
+}
+
+
+
+
+
+
+  
 	
 
 .navbar-default .navbar-toggle{
@@ -67,18 +107,9 @@ header .fixed{
 	min-height:auto;
 }
 
-@media (max-width: 600px) {
-  .navbar-header img {
-    margin-left: 25%; 
-    width: 40%;
-    height: 40%;
-  }
-}
-
 .navbar-default{
 	background-color: transparent;
 	border-color:transparent;
-   
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -86,6 +117,7 @@ header .fixed{
     padding: 6px 11px 4px 3px;
     font-size: 10px;
     font-weight:bold;
+    text-decoration:none;
 }
 
 
@@ -95,6 +127,7 @@ header .fixed{
      color: #F05F40;
      font-weight:bold;
      text-align:center;
+     text-decoration:none;
   }
 }
 
@@ -103,6 +136,7 @@ header .fixed{
 	background-color: transparent;
 	color:  #F05F40 ;
 	font-weight: bold;
+	
 	
 }
 
@@ -215,8 +249,22 @@ button.navbar-toggle{
     width: 100%;
     height: 100%;
 }
-.transparencia {
-    display: none;
+ .transparencia {
+        display: none;
+        position: absolute;
+        background: rgba(240, 95, 64, 0.6);
+        bottom: 0;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        color: white;
+        padding: 25%;
+}
+.proyecto:hover .transparencia {
+        display: block;
+}
+.transparencia2 {
+    float: left;
     position: absolute;
     background: rgba(240, 95, 64, 0.6);
     bottom: 0;
@@ -226,9 +274,7 @@ button.navbar-toggle{
     color: white;
     padding: 25%;
 }
-.proyecto:hover .transparencia {
-    display: block;
-}
+    
 #mistrabajos p {
     font-size: 18px;
 }
@@ -255,9 +301,10 @@ button.navbar-toggle{
 }
 
 @media only screen and (min-width : 768px) {
-
+    .transparencia2: {
+        display: none;
+    }
 }
-
 /*---------------Contáctame-------------------*/
 #contactame h2 {
     font-size: 25px;
@@ -273,7 +320,7 @@ button.navbar-toggle{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-#contactame a:hover {
+#contactame a:hover, #contactame a:focus {
     text-decoration: none;
     color: #F05F40;
 }
@@ -289,7 +336,3 @@ button.navbar-toggle{
 }
 
 /*----------------------------------*/
-
-
-
-

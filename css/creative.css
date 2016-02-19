@@ -1,12 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
 
 .hero {
-	background-size: 100% 100%;
+	background-size: 100%;
+	position:relative;
 	height:680px;
 	background: url(../img/header.jpg);
   	background-size: cover;
 	background-repeat: no-repeat;
     color:#FFFFFF;
-    background-position: 0px -145px ;
+    background-position:center;
 }
 
 
@@ -21,13 +27,28 @@ header .fixed{
   	border-bottom:1px solid rgba(255,255,255, 0.3) ;
   	background:rgba(255,255,255, 0.3);
 }
+
+@media (max-width: 600px) {
+  header .fixed {
+    background-color:white;
+  }
+}
+
 .logos {
 	text-decoration:none;
 	color: rgba(255,255,255, 0.6);
     padding: 6px 11px 4px 3px;
     font-size: 13px;
     font-weight:bold;
-}    
+}
+@media (max-width: 600px) {
+  .logos {
+     color: #F05F40;
+     font-weight:bold;
+  }
+}
+
+
 .logos:hover{
 	text-decoration:none;
 	color:white;
@@ -37,8 +58,9 @@ header .fixed{
 	
 
 .navbar-default .navbar-toggle{
-	border-color: transparent;
+	
 	margin-left: 20px;
+    border-color:1px solid gray;
 }
 .navbar{
 	margin-bottom:0px;
@@ -56,6 +78,7 @@ header .fixed{
 .navbar-default{
 	background-color: transparent;
 	border-color:transparent;
+   
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -64,9 +87,22 @@ header .fixed{
     font-size: 10px;
     font-weight:bold;
 }
+
+
+
+@media (max-width: 600px) {
+.navbar-default .navbar-nav > li > a {
+     color: #F05F40;
+     font-weight:bold;
+     text-align:center;
+  }
+}
+
+
 .navbar-default .navbar-nav > li > a:hover{
 	background-color: transparent;
-	color: white;
+	color:  #F05F40 ;
+	font-weight: bold;
 	
 }
 
@@ -75,14 +111,16 @@ header .fixed{
 }	
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
+    background-color: gray;
     padding-bottom: 5px;
 }
 
 button.navbar-toggle{
     margin-top: 0px;
     padding-top: 5px;
+    
 }
+
 
 /*-------------titulo--------------*/
 
@@ -106,7 +144,9 @@ button.navbar-toggle{
 .white {
 	border-bottom: 3px solid white;
 }	
-
+.conocemas {
+    margin-top: 30px;
+}
 /*-------------sobremi------------------*/
 #sobremi{
 	color:white;
@@ -122,10 +162,12 @@ button.navbar-toggle{
     padding: 2% 0;
 }
 .subrayado {
-    width: 40px;
-    height: 2px;
+    width: 42px;
+    height: 3px;
     margin: auto;
-    border: 1px solid #F05F40;
+    border: 1px solid transparent;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .marco-servicio {
     width: 90%;
@@ -136,7 +178,7 @@ button.navbar-toggle{
     text-align: center;
 }
 #servicios i {
-     font-size: 35px;   
+     font-size: 40px;   
 }
 #servicios h2 {
     font-size: 25px;
@@ -197,8 +239,9 @@ button.navbar-toggle{
     margin-bottom: 0;
 }
 .pd-esp {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 12%;
+    padding-bottom: 12%;
+    
 }
 
 @media only screen and (min-width : 320px) {
@@ -206,8 +249,8 @@ button.navbar-toggle{
 }
 @media only screen and (min-width : 480px) {
     .pd-esp {
-        padding-top: 3%;
-        padding-bottom: 3%;
+        padding-top: 4%;
+        padding-bottom: 4%;
     }
 }
 
@@ -225,8 +268,10 @@ button.navbar-toggle{
     margin:  2% auto;
 }
 #contactame i {
-    font-size: 30px;
+    font-size: 40px;
     color: #333333;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 #contactame a:hover {
     text-decoration: none;
